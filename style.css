@@ -215,3 +215,97 @@ footer {
     font-size: 1rem;
   }
 }
+
+
+
+/* Service Categories Section */
+.service-categories {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.service-categories h2 {
+  font-size: 2rem;
+  color: #c0392b; /* matches your red theme */
+  margin-bottom: 40px;
+}
+
+.service-columns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.service-box {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 30px;
+  width: 320px;
+  transition: transform 0.3s ease;
+  border-top: 4px solid transparent;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+  border-top: 4px solid #c0392b; /* red border highlight */
+  box-shadow: 0 6px 18px rgba(192, 57, 43, 0.25);
+}
+
+.service-box h3 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+.service-box:hover h3 {
+  color: #c0392b;
+}
+
+.service-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.service-box ul li {
+  font-size: 1rem;
+  padding: 10px 0;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, #c0392b, #aaa);
+  border-image-slice: 1;
+  transition: color 0.3s ease;
+}
+
+.service-box ul li:last-child {
+  border-bottom: none;
+}
+
+/* Hover text color change */
+.service-box:hover ul li {
+  color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-box {
+    width: 90%;
+  }
+}
+@media (min-width: 992px) {
+  .hero {
+    padding: 180px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
